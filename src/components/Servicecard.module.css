@@ -1,0 +1,120 @@
+/* Servicecard.module.css */
+.card {
+    width: 635px;
+    height: 130px;
+    background-color: rgba(31, 31, 31, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    align-items: center;
+    display: flex;
+    transition: 0.5s;
+}
+.card:hover {
+    border: 1px solid rgba(201, 243, 29, 1);
+}
+
+.number {
+    font-size: 24px;
+    margin-left: 60px;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+.title {
+    width: 250px;
+    font-size: 18px;
+    margin-left: 40px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(19, 19, 19, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    margin-left: 170px;
+    text-align: center;
+}
+.circle svg {
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.circle:hover {
+    background-color: rgba(201, 243, 29, 1);
+    color: #131313;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        padding-top: 50px;
+        width: 200px;
+        height: 300px;
+        margin-left: 10px;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        padding-top: 50px;
+        width: 200px;
+        flex-wrap: wrap;
+        height: 250px;
+    }
+
+    .title {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .card {
+        padding-top: 20px;
+        width: 300px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .number {
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        width: 300px; /* Adjusted width for better use of space */
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 250px; 
+    }
+}

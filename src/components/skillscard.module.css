@@ -1,0 +1,75 @@
+.container {
+    width: 160px;
+    height: 195px;
+    background-color: rgba(31, 31, 31, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    text-align: center;
+    align-items: center;
+    transition: .5s;
+    position: relative;
+    margin: 10px;
+}
+
+.container:hover,
+.container.hovered {
+    background-color: rgba(19, 19, 19, 1);
+    border: 1px solid rgba(201, 243, 29, 1);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+}
+
+.img img {
+    margin-top: 20px;
+    width: 70px;
+    height: 60px;
+}
+
+.text {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+.statusBarContainer{
+    position: absolute;
+    height: 40px;
+    border-radius: 14px;
+    background-color: rgba(19, 19, 19, 1);
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.5s;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+}
+
+.statusBar {
+    border-radius: 14px;
+    height: 40px;
+    padding-top: 5px;
+    
+    background-color: rgba(19, 19, 19, 1);
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container:hover .statusBar {
+    background-color: rgba(201, 243, 29, 1);
+    color: #131313;
+    cursor: pointer;
+}

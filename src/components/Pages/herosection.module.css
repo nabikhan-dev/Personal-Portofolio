@@ -1,0 +1,153 @@
+.hero {
+    position: relative;
+    z-index: 1;
+    
+
+}
+
+
+.title-section {
+    margin-top: 120px !important;
+    animation: fadeInLeftAnimation 1s ease-in forwards;
+
+}
+
+.title {
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 43px;
+    font-weight: normal;
+}
+
+
+.button-2 {
+    margin-left: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: padding-left 0.5s;
+}
+
+.button-2:hover {
+    color: rgba(201, 243, 29, 1);
+    
+}
+.button{
+    margin-top: 100px;
+   
+}
+.hero-img {
+    /* background-image: url(../assets/section.png); */
+    background-repeat: no-repeat;
+    width: 470px;
+    height: 608px;
+    opacity: 0;
+    animation: fadeInBottomAnimation 1s ease-in forwards;
+}
+
+
+.card {
+    width: 250px;
+    height: 380px;
+    background-color: rgba(7, 7, 7, 1);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 120px;
+    margin-left: 70px;
+    opacity: 0;
+    animation: fadeInRightAnimation 1s ease-in-out forwards;
+}
+
+
+/* Mobile Responsive  */
+@media screen and (max-width: 768px) {
+    .hero-img img {
+        height: 370px;
+        width: 350px;
+        margin-top: 150px;
+    }
+
+    .container {
+        padding-top: 0px;
+    }
+
+    .card {
+        height: 350px;
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .button-2 {
+        margin-left: 20px;
+       
+    }
+}
+
+/* Ipad Responsive */
+@media screen and (max-width: 1024px) {
+    .hero-img{
+        height: 400px;
+        width: 370px;
+        display: flex;
+        margin-left: 0px;
+    }
+    
+    .container {
+        padding-top: 20px;
+    }
+
+    .card {
+        height: 400px;
+        width: 240px;
+        margin-left: 0;
+    }
+
+    .button-2 {
+        margin-left: -5px;
+        margin-top: 40px;
+      
+       
+    }
+}
+
+
+
+
+/* fade In */
+@keyframes fadeInLeftAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInBottomAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(3%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRightAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

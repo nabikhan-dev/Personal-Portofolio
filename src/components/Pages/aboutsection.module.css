@@ -1,0 +1,205 @@
+.about {
+    background-color: rgba(7, 7, 7, 1);
+   
+}
+
+.about-contianer {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    animation: fadeInLeftAnimation 1s ease-in forwards;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-left: 20px;
+    animation: fadeInLeftAnimation 1s ease-in forwards;
+}
+
+span {
+    color: rgba(201, 243, 29, 1);
+
+}
+
+.heading {
+    font-size: 43px;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.text {
+    font-size: 16px;
+    color: white;
+    padding-top: 30px;
+    font-weight: 300;
+    opacity: .5;
+    margin-left: 20px;
+}
+
+.list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    margin-left: -40px;
+    animation: fadeInBottomAnimation 1s ease-in forwards;
+}
+
+.list li {
+    list-style: none;
+    font-size: 20px;
+    margin-left: 20px;
+   
+}
+
+
+.list li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contact {
+    width: 570px;
+    height: 86px;
+    background-color: rgba(31, 31, 31, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: fadeInBottomAnimation 1s ease-in forwards;
+
+}
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(201, 243, 29, 1);
+    border-radius: 25px;
+    margin-left: -200px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.contact-icon img{
+    margin-left: 11px;
+    margin-top: 0px;
+    width: 20px;
+}
+
+.contact-icon p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1.3;
+    transition: color 0.5s ease;
+}
+.contact-icon  a:hover{
+    text-decoration: none !important;
+     
+}
+.contact-icon  p:hover{
+    color: rgba(201, 243, 29, 1);
+   
+}
+.contact-icon span{
+    font-size: 14px;
+    color: #ffffff;
+    opacity: .6;
+}
+.routate-png{
+    width: 20px;
+    height: 20px;
+}
+.about-img{
+    animation: fadeInRightAnimation 1s ease-in-out forwards;
+ 
+}
+
+.about-img img{
+    margin-left: 200px;
+    
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .about-img img{
+       margin-top: 50px;
+       width: 350px;
+       height: 430px;
+       margin-left: 10px;
+    }
+
+    .contact {
+        height: 180px;
+        width: 350px;
+        margin-top: 80px;
+        display: inline-block;
+        margin-left: 10px;
+        
+     
+    }
+    .contact-icon {
+        margin-left: 12px;
+        margin-top: 30px;
+    }
+    .list li {
+        font-size: 15px;
+        
+    }
+    .list {
+
+        flex-wrap: none;
+        display: inline;
+        margin-left: 5px;
+    }
+    .ml {
+        margin-left: 0px;
+    }
+
+    .about-contianer {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+  
+}
+
+
+
+/* FadeIn */
+@keyframes fadeInLeftAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInBottomAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInRightAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(2%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

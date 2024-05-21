@@ -1,0 +1,26 @@
+
+  
+  .rotatingImage {
+    width: 20px;
+    height: 20px;
+    animation: rotate 7s linear infinite; /* Animation for rotating the image */
+  }
+  @media screen and (max-width: 768px) {
+    .rotatingImage {
+      display: none;
+    }
+}
+ @media screen and (max-width: 1024px) {
+    .rotatingImage {
+      display: none;
+    }
+}
+  @keyframes rotate {
+    0% {
+      transform: translate(-100px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-100px) rotate(360deg);
+    }
+  }
+  

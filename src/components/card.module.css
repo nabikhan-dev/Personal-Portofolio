@@ -1,0 +1,20 @@
+
+
+.card{
+    color: rgba(201, 243, 29, 1);
+    font-size: 40px;
+    font-weight: medium;
+    font-family: "Inter", sans-serif;
+}
+
+.text{
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    opacity: .4;
+}
+.hr{
+    background-color: white;
+    opacity: .2;
+}

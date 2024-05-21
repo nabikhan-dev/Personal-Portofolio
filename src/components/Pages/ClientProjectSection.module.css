@@ -1,0 +1,40 @@
+.h4{
+    margin-left: 550px;
+    color:rgba(255, 255, 255, 0.65)
+}
+.container{
+    padding-bottom: 150px;
+    display: inline-flex;
+    flex-wrap: wrap;
+   
+
+}
+
+.logo{
+    width: 280px;
+    height: 80px;
+    padding: 100px 100px 100px 100px;
+    opacity: .3;
+    transition: opacity 0.5s ease; 
+}
+
+.logo:hover{
+    opacity: 1;
+}
+@media screen and (max-width: 768px) {
+     .h4{
+        width: 300px;
+        text-align: center;     
+        margin-left: 50px;  
+
+    }
+}
+@media screen and (max-width: 1024px) {
+     .h4{
+        /* width: 300px; */
+        margin-left: 150px;
+        /* text-align: center; */
+        
+
+    }
+}

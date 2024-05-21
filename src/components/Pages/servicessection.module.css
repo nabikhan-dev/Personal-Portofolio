@@ -1,0 +1,51 @@
+.container {
+    animation: fadeInBottomAnimation 1s ease-in-out forwards;
+}
+
+.text-container {
+    margin-left: 150px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+h4 {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: -200px;
+}
+
+h1 {
+    font-size: 43px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1366px) {
+    .container {
+        padding: 0 20px; 
+    }
+
+    .text-container {
+        margin-left: 50px; 
+    }
+
+    h4 {
+        margin-left: -150px; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .text-container {
+        margin-left: 0; 
+    }
+
+    h4 {
+        margin-left: 0; 
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}

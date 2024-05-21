@@ -1,0 +1,156 @@
+/* General container styling */
+.container {
+    display: flex;
+    margin-top: 100px;
+}
+
+/* Title styling */
+.title {
+    margin-top: 150px;
+    animation: fadeInLeftAnimation 1s ease-in forwards;
+}
+
+/* Container heading styles */
+.container h6 {
+    color: rgba(201, 243, 29, 1);
+    padding-bottom: 30px;
+    animation: fadeInLeftAnimation 1s ease-in forwards;
+}
+
+.container h1 {
+    width: 400px;
+}
+
+.container p {
+    width: 400px;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.65);
+    padding-top: 10px;
+    animation: fadeInLeftAnimation 1s ease-in forwards;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Circle styling */
+.circle {
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: rgba(19, 19, 19, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.circle svg {
+    margin-top: 17px;
+    transition: 0.5s;
+}
+
+.circle:hover {
+    background-color: rgba(201, 243, 29, 1);
+    color: #131313;
+}
+
+/* Image styling */
+.container img {
+    width: 630px;
+    height: 500px;
+    animation: fadeInRightAnimation 1s ease-in-out forwards;
+}
+
+/* Responsive styling for 1366px */
+/* @media screen and (max-width: 1366px) {
+    .container img {
+        width: 500px;
+        height: 400px;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .container h1, .container p {
+        width: 350px;
+    }
+
+    .title {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+} */
+
+/* Responsive styling for 1024px */
+@media screen and (max-width: 1024px) {
+    .container img {
+        width: 400px;
+        height: 300px;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+
+    .container h1, .container p {
+        width: 300px;
+    }
+
+    .title {
+        margin-top: 20px;
+        /* margin-left: 100px; */
+    }
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .container h1, .container p {
+        width: 280px;
+    }
+
+    .title {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .circle {
+        margin: 20px auto;
+    }
+}
+
+/* Keyframe animations */
+@keyframes fadeInLeftAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-3%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRightAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(2%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
