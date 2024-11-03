@@ -1,51 +1,68 @@
 .container {
     animation: fadeInBottomAnimation 1s ease-in-out forwards;
+    padding: 0 15px; /* General padding for all devices */
 }
 
 .text-container {
-    margin-left: 150px;
-    margin-bottom: 60px;
+    margin: 0 auto; /* Center align text container */
     text-align: center;
+    padding: 20px; /* Add padding */
 }
 
 h4 {
     color: rgba(255, 255, 255, 0.65);
     font-size: 16px;
     font-weight: 500;
-    margin-top: 60px;
-    margin-bottom: 40px;
-    margin-left: -200px;
+    margin: 40px 0;
 }
 
 h1 {
-    font-size: 43px;
+    font-size: 43px; /* Responsive font size */
     color: #ffffff;
 }
 
+/* Media Queries for Responsiveness */
+
 @media screen and (max-width: 1366px) {
-    .container {
+    .text-container {
         padding: 0 20px; 
     }
 
-    .text-container {
-        margin-left: 50px; 
+    h4 {
+        margin: 20px 0;
     }
 
-    h4 {
-        margin-left: -150px; 
+    h1 {
+        font-size: 32px; /* Adjust h1 font size */
     }
 }
 
 @media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 28px; /* Further adjustment for tablet */
+    }
+}
+
+@media screen and (max-width: 768px) {
     .text-container {
-        margin-left: 0; 
+        padding: 10px; /* Less padding for smaller screens */
     }
 
     h4 {
-        margin-left: 0; 
+        font-size: 14px; /* Smaller font size */
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 20px; /* Further reduction for mobile */
+    }
+
+    .row {
+        flex-direction: column; /* Stack items vertically on small screens */
     }
 }

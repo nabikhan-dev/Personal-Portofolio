@@ -1,40 +1,51 @@
-.h4{
-    margin-left: 550px;
-    color:rgba(255, 255, 255, 0.65)
+.h4 {
+    margin: 0 auto; /* Center the heading */
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center; /* Center align text for better visibility */
 }
-.container{
+
+.container {
     padding-bottom: 150px;
-    display: inline-flex;
-    flex-wrap: wrap;
-   
-
+    display: flex; /* Use flexbox for better layout control */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center logos horizontally */
 }
 
-.logo{
+.logo {
     width: 280px;
     height: 80px;
-    padding: 100px 100px 100px 100px;
-    opacity: .3;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    opacity: 0.3;
     transition: opacity 0.5s ease; 
 }
 
-.logo:hover{
+.logo:hover {
     opacity: 1;
 }
-@media screen and (max-width: 768px) {
-     .h4{
-        width: 300px;
-        text-align: center;     
-        margin-left: 50px;  
 
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .h4 {
+        width: 100%; /* Full width on mobile */
+        margin: 20px 0; /* Adjust margins for mobile */
+        font-size: 18px; /* Adjust font size for better readability */
+    }
+    .logo {
+        width: 200px; /* Smaller logo width on mobile */
+        height: 60px; /* Adjust height for smaller logos */
+        
     }
 }
-@media screen and (max-width: 1024px) {
-     .h4{
-        /* width: 300px; */
-        margin-left: 150px;
-        /* text-align: center; */
-        
 
+@media screen and (max-width: 1024px) {
+    .h4 {
+        font-size: 20px; /* Slightly larger text for tablets */
+        margin: 40px 0; /* Increased vertical margin for better spacing */
+    }
+    .logo {
+        width: 240px; /* Slightly smaller logo width on tablets */
+        height: 70px; /* Adjust height for tablets */
+       
     }
 }

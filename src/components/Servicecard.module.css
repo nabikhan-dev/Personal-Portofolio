@@ -1,40 +1,41 @@
-/* Servicecard.module.css */
 .card {
-    width: 635px;
-    height: 130px;
+    width: 100%; /* Use full width and adjust based on screen size */
+    max-width: 635px; /* Set a maximum width */
+    height: auto; /* Allow height to adjust based on content */
     background-color: rgba(31, 31, 31, 1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
     border-radius: 15px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    align-items: center;
+    margin: 30px auto; /* Center card and provide vertical spacing */
+    padding: 20px; 
     display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; 
     transition: 0.5s;
 }
+
 .card:hover {
     border: 1px solid rgba(201, 243, 29, 1);
 }
 
 .number {
     font-size: 24px;
-    margin-left: 60px;
     font-weight: 500;
-    margin-bottom: 26px;
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
 }
 
 .title {
-    width: 250px;
+    width: 100%; /* Full width */
     font-size: 18px;
-    margin-left: 40px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .description {
     font-size: 16px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.65);
+    margin: 5px 0; /* Add margin for spacing */
 }
 
 .circle {
@@ -42,79 +43,61 @@
     height: 40px;
     background-color: rgba(19, 19, 19, 1);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
-    margin-left: 170px;
+    border-radius: 50%; /* Use 50% for a perfect circle */
+    margin-top: 10px; /* Add margin for spacing */
+    align-self: flex-end; /* Align to the end of the card */
     text-align: center;
 }
+
 .circle svg {
     margin-top: 10px;
     transition: 0.5s;
 }
+
 .circle:hover {
     background-color: rgba(201, 243, 29, 1);
     color: #131313;
 }
 
+/* Responsive styles */
 @media screen and (max-width: 768px) {
     .card {
-        padding-top: 50px;
-        width: 200px;
-        height: 300px;
-        margin-left: 10px;
-    }
-
-    .circle {
-        width: 40px;
-        height: 40px;
-        margin-top: 20px;
-        margin-left: 40px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .card {
-        padding-top: 50px;
-        width: 200px;
-        flex-wrap: wrap;
-        height: 250px;
+        padding: 20px;
+        margin: 10px; /* Reduce margin for smaller screens */
     }
 
     .title {
-        margin-left: 10px;
-    }
-}
-
-@media screen and (max-width: 1366px) {
-    .card {
-        padding-top: 20px;
-        width: 300px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 20px;
-    }
-
-    .number {
-        margin-left: 25px;
-        margin-bottom: 10px;
-    }
-
-    .title {
-        width: 300px; /* Adjusted width for better use of space */
-        margin-left: 0;
-        margin-top: 10px;
-        text-align: center;
+        font-size: 16px; /* Adjust title size */
     }
 
     .description {
-        text-align: center;
+        font-size: 14px; /* Adjust description size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .number {
+        font-size: 20px; /* Adjust number size */
+    }
+
+    .title {
+        font-size: 16px; /* Further adjust title size */
+    }
+
+    .description {
+        font-size: 12px; /* Further adjust description size */
     }
 
     .circle {
-        width: 40px;
-        height: 40px;
-        margin-top: 10px;
-        margin-left: 250px; 
+        width: 35px; /* Smaller circle */
+        height: 35px;
+    }
+
+    .circle svg {
+        margin-top: 8px; /* Adjust icon margin */
     }
 }

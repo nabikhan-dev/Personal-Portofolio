@@ -7,49 +7,46 @@ import { FaAngleRight } from "react-icons/fa";
 
 function ProjectSection() {
     return (
-        <section id="project" className={styles.projectSection}>
-            <div className='container-fluid col-sm-10 col-lg-10 col-md-10 item-align-center '>
+        <section id="project">
+            <div className={`container-fluid col-sm-12 col-md-10 col-lg-10`}>
                 <div className={`${styles.projectSectionContainer}`}>
-
-                    <div className={`${styles["pro-container"]} item-align-center`}>
-                        <h4>Latest Works</h4>
-                        <h1 className="col-sm-11 col-md-11 col-lg-11 text-center item-align-center">Explore My Popular <span>Projects</span></h1>
+                    <div className={`${styles["pro-container"]}`}>
+                        <h4 className={`${styles["subheadlines"]}`}>Latest Works</h4>
+                        <h1 className={`${styles["Headline"]} text-center`}>Explore My Popular <span>Projects</span></h1>
                     </div>
                 </div>
-                <div >
+                <div className={`${styles.projectCardsContainer}`}>
                     <ProjectCard
                         src={project}
                         title={"Product Design"}
                         name={"Mobile Application UI/UX Design"}
-                        description={"Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae"} />
-                </div>
-                <div >
+                        description={"Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae"} 
+                    />
                     <ProjectCardleft
                         src={project}
                         title={"Product Design"}
                         name={"Mobile Application UI/UX Design"}
-                        description={"Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae"} />
-                </div>
-                <div >
+                        description={"Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae"} 
+                    />
                     <ProjectCard
                         src={project}
                         title={"Product Design"}
                         name={"Mobile Application UI/UX Design"}
-                        description={"Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae"} />
-                </div>
-                <div >
+                        description={"Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae"} 
+                    />
                     <ProjectCardleft
                         src={project}
                         title={"Product Design"}
                         name={"Mobile Application UI/UX Design"}
-                        description={"Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae"} />
+                        description={"Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae"} 
+                    />
                 </div>
-
-            </div>
-            <div className={styles.pro_button}>
-                <Button
-                    Name={"View More Project"}
-                    Icon={<FaAngleRight />} />
+                <div className={styles.pro_button}>
+                    <Button
+                        Name={"View More Project"}
+                        Icon={<FaAngleRight />} 
+                    />
+                </div>
             </div>
         </section>
     );
